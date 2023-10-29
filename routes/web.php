@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('mail', function () {
+    $markdown = new \Illuminate\Mail\Markdown(view(), config('mail.markdown'));
+
+    return $markdown->render('emails.user.email');
+});

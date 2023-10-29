@@ -26,5 +26,8 @@
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
+        <env name="ELASTICSEARCH_SENT_EMAIL_INDEX" value="test_sent_emails"/>
+        <server name="DB_CONNECTION" value="test"/>
+        <server name="DB_DATABASE" value="testing"/>
     </php>
 </phpunit>

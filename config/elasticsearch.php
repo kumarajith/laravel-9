@@ -211,4 +211,5 @@ return [
 
     ],
 
+    'sent_emails_index' => env('ELASTICSEARCH_SENT_EMAIL_INDEX', 'sent_emails')
 ];
